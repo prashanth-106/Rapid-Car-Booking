@@ -10,7 +10,7 @@ A full-stack car rental system designed to streamline the process of booking veh
 - **Car Management** (Admin):
   - Add, update, or remove cars from the system.
   - View booking history and manage availability.
-- **Booking System** (Customer)**:
+- **Booking System** (Customer):
   - Browse available cars with filters (price, model, dates).
   - Book cars for specific time periods.
   - View booking history and cancel/reschedule bookings.
