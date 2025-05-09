@@ -13,10 +13,9 @@ A full-stack car rental system designed to streamline the process of booking veh
 - **Booking System** (Customer):
   - Browse available cars with filters (price, model, dates).
   - Book cars for specific time periods.
-  - View booking history and cancel/reschedule bookings.
-- **Search & Filtering**: Customers can search cars by model, price range, or availability dates.
-- **Payment Integration**: Simulated payment gateway for booking confirmation (e.g., Stripe).
-- **User Profile Management**: Update personal details and view booking history.
+  - View booking history.
+- **Search & Filtering**: Customers can search cars by model, color, type and transmisson.
+- **User Profile Management**: personal details and view booking history.
 
 ## Technologies Used
 
