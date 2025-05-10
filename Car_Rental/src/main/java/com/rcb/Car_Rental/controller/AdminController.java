@@ -13,8 +13,6 @@ import com.rcb.Car_Rental.services.auth.admin.AdminService;
 import java.io.IOException;
 import java.util.List;
 
-import static org.springframework.data.jpa.domain.AbstractPersistable_.id;
-
 @RestController
 @RequestMapping("/api/admin")
 @RequiredArgsConstructor

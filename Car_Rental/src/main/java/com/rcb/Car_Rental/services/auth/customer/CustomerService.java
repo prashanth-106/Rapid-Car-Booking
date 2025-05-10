@@ -1,7 +1,5 @@
 package com.rcb.Car_Rental.services.auth.customer;
 
-import javax.swing.*;
-
 import com.rcb.Car_Rental.dto.BookACarDto;
 import com.rcb.Car_Rental.dto.CarDto;
 import com.rcb.Car_Rental.dto.CarDtoListDto;
@@ -11,14 +9,14 @@ import java.util.List;
 
 public interface CustomerService {
 
-    List<CarDto> getAllCars();
+	List<CarDto> getAllCars();
 
-    boolean bookACar(BookACarDto bookACarDto);
+	boolean bookACar(BookACarDto bookACarDto);
 
-    CarDto getCarById(Long carId);
+	CarDto getCarById(Long carId);
 
-    List<BookACarDto> getBookingsByUserId(Long userId);
+	List<BookACarDto> getBookingsByUserId(Long userId);
 
-    CarDtoListDto searchCar(SearchCarDto searchCarDto);
+	CarDtoListDto searchCar(SearchCarDto searchCarDto);
 
 }

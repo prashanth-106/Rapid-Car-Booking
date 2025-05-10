@@ -2,9 +2,12 @@ import {
   NzTransitionPatchModule
 } from "./chunk-PCGDFTYS.js";
 import {
+  NzWaveModule
+} from "./chunk-N6EEODGH.js";
+import {
   NzIconDirective,
   NzIconModule
-} from "./chunk-AGIOQCJM.js";
+} from "./chunk-ISX3TIIF.js";
 import {
   NzConfigService,
   WithConfig
@@ -15,9 +18,6 @@ import {
 import {
   InputBoolean
 } from "./chunk-X3KDQ532.js";
-import {
-  NzWaveModule
-} from "./chunk-N6EEODGH.js";
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
@@ -416,4 +416,4 @@ export {
   NzButtonGroupComponent,
   NzButtonModule
 };
-//# sourceMappingURL=chunk-47LAQPGB.js.map
+//# sourceMappingURL=chunk-LDKDERMG.js.map

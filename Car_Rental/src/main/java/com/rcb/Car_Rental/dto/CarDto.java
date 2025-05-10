@@ -4,8 +4,6 @@ package com.rcb.Car_Rental.dto;
 import lombok.Data;
 import org.springframework.web.multipart.MultipartFile;
 
-import java.util.Date;
-
 @Data
 public class CarDto {
 

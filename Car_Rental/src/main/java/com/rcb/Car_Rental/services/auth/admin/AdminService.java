@@ -1,33 +1,29 @@
 package com.rcb.Car_Rental.services.auth.admin;
 
-import jakarta.persistence.metamodel.SingularAttribute;
-import org.springframework.data.jpa.domain.AbstractPersistable;
-
 import com.rcb.Car_Rental.dto.BookACarDto;
 import com.rcb.Car_Rental.dto.CarDto;
 import com.rcb.Car_Rental.dto.CarDtoListDto;
 import com.rcb.Car_Rental.dto.SearchCarDto;
 
 import java.io.IOException;
-import java.io.Serializable;
 import java.util.List;
 
 public interface AdminService {
 
-    boolean postCar(CarDto carDto) throws IOException;
-    List<CarDto> getAllCars();
+	boolean postCar(CarDto carDto) throws IOException;
 
-    void deleteCar(Long id);
+	List<CarDto> getAllCars();
 
-    CarDto getCarById(Long id);
+	void deleteCar(Long id);
 
-    boolean updateCar(Long carId, CarDto carDto) throws IOException;
+	CarDto getCarById(Long id);
 
-    List<BookACarDto> getBookings();
+	boolean updateCar(Long carId, CarDto carDto) throws IOException;
 
-    boolean changeBookingStatus(Long bookingId, String status);
+	List<BookACarDto> getBookings();
 
-    CarDtoListDto searchCar(SearchCarDto searchCarDto);
+	boolean changeBookingStatus(Long bookingId, String status);
 
+	CarDtoListDto searchCar(SearchCarDto searchCarDto);
 
 }

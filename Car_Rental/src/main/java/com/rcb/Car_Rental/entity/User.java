@@ -11,6 +11,7 @@ import com.rcb.Car_Rental.enums.UserRole;
 import java.util.Collection;
 import java.util.List;
 
+@SuppressWarnings("serial")
 @Data
 
 @Table(name = "users")

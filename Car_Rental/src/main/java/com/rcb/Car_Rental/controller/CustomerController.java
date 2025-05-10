@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.*;
 import com.rcb.Car_Rental.dto.BookACarDto;
 import com.rcb.Car_Rental.dto.CarDto;
 import com.rcb.Car_Rental.dto.SearchCarDto;
-import com.rcb.Car_Rental.entity.BookACar;
 import com.rcb.Car_Rental.services.auth.customer.CustomerService;
 
 import java.util.List;

@@ -18,26 +18,30 @@ export class SearchCarComponent {
   postCarForm: any;
   cars: any[] = [];
 
-
   constructor(private fb: FormBuilder,
-    private service: AdminService){
+              private service: AdminService) {
     this.searchCarForm = this.fb.group({
       brand:[null],
       type:[null],
       transmission:[null],
       color:[null],
-    })
+    });
   }
 
   searchCar() {
     this.isSpinning = true;
     this.service.searchCar(this.searchCarForm.value).subscribe((res) => {
+      this.cars = []; // Clear previous search results
       res.carDtoList.forEach((element: { processedImg: string; returnedImage: string; }) => {
         element.processedImg = 'data:image/jpeg;base64,' + element.returnedImage;
         this.cars.push(element);
       });
       this.isSpinning = false;
-    })
+    });
   }
 
+  clearSearch() {
+    this.searchCarForm.reset();  // Reset the form
+    this.cars = [];              // Clear the results
+  }
 }

@@ -40,13 +40,13 @@ export class LoginComponent {
         StorageService.saveUser(user);
         StorageService.saveToken(res.jwt);
        if (StorageService.isAdminLoggedIn()) {
-        alert("Welcome Admin");
+              this.message.success("welcome Admin!", { nzDuration: 5000 });
+
         this.router.navigateByUrl("/admin/dashboard");
       } else if (StorageService.isCustomerLoggedIn()) {
-        alert("Welcome Customer");
+        this.message.success("welcome Customer!", { nzDuration: 5000 });
         this.router.navigateByUrl("/customer/dashboard");
       } else {
-        alert("Bad credentials.");
         this.message.error("Bad credentials.", { nzDuration: 50000 });
       }
     }

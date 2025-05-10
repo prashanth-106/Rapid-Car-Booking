@@ -1,8 +1,6 @@
 <div style="background-color: #f5f5f5; min-height: 91vh;">
-
   <div style="padding-top: 10px;">
     <div *ngIf="car" class="car-details-container">
-
       <div class="car-details">
         <div nz-row>
           <div nz-col nzSpan="8">
@@ -13,8 +11,7 @@
             <p class="car-description">{{ car.description }}</p>
             <hr>
             <h5>
-              Price: <b>&#8377;{{ car.price }}</b> - Color: <b>{{ car.color }}</b> - Transmission: <b>{{ car.transmission }}</b> -
-              Type: <b>{{ car.type }}</b> - Year: <b>{{ car.year | date: 'yyyy' }}</b>
+              Price: <b>&#8377;{{ car.price }}</b> - Color: <b>{{ car.color }}</b> - Transmission: <b>{{ car.transmission }}</b> - Type: <b>{{ car.type }}</b> - Year: <b>{{ car.year | date: 'yyyy' }}</b>
             </h5>
             <hr>
           </div>
@@ -30,16 +27,26 @@
                 <nz-form-item>
                   <nz-form-label nzFor="fromDate" class="form-label">From Date</nz-form-label>
                   <nz-form-control>
-                    <nz-date-picker formControlName="fromDate" nzPlaceHolder="From Date" [nzFormat]="dateFormat" id="fromDate">
-                    </nz-date-picker>
+                    <nz-date-picker
+                      formControlName="fromDate"
+                      nzPlaceHolder="From Date"
+                      [nzFormat]="dateFormat"
+                      [nzDisabledDate]="disablePastDates"
+                      id="fromDate"
+                    ></nz-date-picker>
                   </nz-form-control>
                 </nz-form-item>
 
                 <nz-form-item>
                   <nz-form-label nzFor="toDate" class="form-label">To Date</nz-form-label>
                   <nz-form-control>
-                    <nz-date-picker formControlName="toDate" nzPlaceHolder="To Date" [nzFormat]="dateFormat" id="toDate">
-                    </nz-date-picker>
+                    <nz-date-picker
+                      formControlName="toDate"
+                      nzPlaceHolder="To Date"
+                      [nzFormat]="dateFormat"
+                      [nzDisabledDate]="disablePastDates"
+                      id="toDate"
+                    ></nz-date-picker>
                   </nz-form-control>
                 </nz-form-item>
               </div>

@@ -39,6 +39,12 @@ export class PostCarComponent {
     });
   }
 
+  // Disable future years in the year picker
+  disabledYear = (current: Date): boolean => {
+    // Disable dates after the current year
+    return current && current.getFullYear() > new Date().getFullYear();
+  };
+
   postCar() {
     if (this.postCarForm.invalid || !this.selectedFile) {
       this.message.error("Please fill all required fields and select an image");
