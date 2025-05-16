@@ -34,11 +34,7 @@ A full-stack car rental system designed to streamline the process of booking veh
 - Angular CLI (`npm install -g @angular/cli`)
 - Maven
 
-### Backend Setup (Spring Boot)
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/rapid-car-booking.git
-   cd rapid-car-booking/backend```
+
 ### Snapshots
 #1 Login Page
 ![WhatsApp Image 2025-05-09 at 23 27 12_e06eff8b](https://github.com/user-attachments/assets/d2f96132-f05c-4d0b-963c-0f3847dd2ae5)
